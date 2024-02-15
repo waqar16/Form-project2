@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #303132;
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .btn-submit{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            border-radius: 10px;
+            background-color: #535252;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+
+        .form-group label {
+            font-size: 18px;
+            color: white;
+        }
+
+        .form-control {
+            font-size: 16px;
+            border-color: #ced4da;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            border-color: #80bdff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 18px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>USER INFORMATION</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select class="form-control" id="type">
+                    <option>Mortgage</option>
+                    <option>Auto</option>
+                    <option>Credit Card</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address">
+            </div>
+            <div class="form-group">
+                <label for="transactionDate">Transaction Date</label>
+                <input type="date" class="form-control" id="transactionDate">
+            </div>
+            <div class="form-group">
+                <label for="loanAmount">Loan Amount / Account Limit</label>
+                <input type="text" class="form-control" id="loanAmount" placeholder="Enter Loan Amount / Account Limit">
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Interest Rate</label>
+                <input type="text" class="form-control" id="interestRate" placeholder="Enter Interest Rate">
+            </div>
+            <div class="form-group">
+                <label for="term">Term (Years)</label>
+                <input type="number" class="form-control" id="term" placeholder="Enter Term Years">
+            </div>
+            <div class="form-group">
+                <label for="financialInstitution">Financial Institution</label>
+                <input type="text" class="form-control" id="financialInstitution"
+                    placeholder="Enter Financial Institution">
+            </div>
+            <div class="form-group">
+                <label for="accountNumber">Account Number</label>
+                <input type="text" class="form-control" id="accountNumber" placeholder="Enter Account Number">
+            </div>
+            <!-- Add other fields here -->
+            <div class="form-group">
+                <label for="originator">Originator</label>
+                <input type="text" class="form-control" id="originator" placeholder="Enter Originator">
+            </div>
+            <div class="form-group">
+                <label for="servicer">Servicer</label>
+                <input type="text" class="form-control" id="servicer" placeholder="Enter Servicer">
+            </div>
+            <div class="form-group">
+                <label for="issuingEntity">Issuing Entity</label>
+                <input type="text" class="form-control" id="issuingEntity" placeholder="Enter Issuing Entity">
+            </div>
+            <div class="form-group">
+                <label for="securitization">Securitization</label>
+                <input type="text" class="form-control" id="securitization" placeholder="Enter Securitization">
+            </div>
+            <div class="form-group">
+                <label for="trustName">Trust Name</label>
+                <input type="text" class="form-control" id="trustName" placeholder="Enter Trust Name">
+            </div>
+            <div class="form-group">
+                <label for="maturityDate">Maturity Date</label>
+                <input type="date" class="form-control" id="maturityDate">
+            </div>
+            <div class="form-group">
+                <label for="trustee">Trustee</label>
+                <input type="text" class="form-control" id="trustee" placeholder="Enter Trustee">
+            </div>
+            <div class="form-group">
+                <label for="abnormality">Abnormality / Fraud Description</label>
+                <textarea class="form-control" id="abnormality" rows="4"
+                    placeholder="Enter Abnormality / Fraud Description"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recordPossession">Record of Diagram Possession</label>
+                <input type="file" class="form-control-file" id="recordPossession">
+            </div>
+            <div class="form-group">
+                <label for="reportSummary">Final Report Summary</label>
+                <textarea class="form-control" id="reportSummary" rows="6"
+                    placeholder="Enter Final Report Summary"></textarea>
+            </div>
+            <a href="admin_table.html" class="btn btn-primary btn-submit">Submit</a>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
